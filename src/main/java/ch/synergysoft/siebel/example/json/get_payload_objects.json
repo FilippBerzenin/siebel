@@ -1,0 +1,88 @@
+{
+"Link": [
+{
+"rel": "self",
+"href": "http://ServerName:port/siebel-rest/v1.0/data/Account/Account/88-4XVPD",
+"name": "Account"
+},
+{
+"rel": "canonical",
+"href": "http://ServerName:port/siebel-rest/v1.0/data/Account/Account/88-4XVPD",
+"name": "Account"
+},
+{
+"rel": "child",
+"href": "http://ServerName:port/siebel-rest/v1.0/data/Account/Account/88-4XVPD/UT Account Partner",
+"name": "UT Account Partner"
+},
+{
+"rel": "child",
+"href": "http://ServerName:port/siebel-rest/v1.0/data/Account/Account/88-4XVPD/TAF Product Catalog Product Category",
+"name": "TAF Product Catalog Product Category"
+},
+{
+"rel": "child",
+"href": "http://ServerName:port/siebel-rest/v1.0/data/Account/Account/88-4XVPD/TAF Assortment Plan2",
+"name": "TAF Assortment Plan2"
+},
+{
+"rel": "child",
+"href": "http://ServerName:port/siebel-rest/v1.0/data/Account/Account/88-4XVPD/Revenue Plan",
+"name": "Revenue Plan"
+},
+{
+"rel": "child",
+"href": "http://ServerName:port/siebel-rest/v1.0/data/Account/ Account/88-4XVPD/Retail Product",
+"name": "Retail Product"
+},
+{
+"rel": "child",
+"href": "http://ServerName:port/siebel-rest/v1.0/data/Account/Account/88-4XVPD/Retail Audit Product",
+"name": "Retail Audit Product"
+},
+{
+"rel": "child",
+"href": "http://ServerName:port/siebel-rest/v1.0/data/Account/Account/88-4XVPD/RTD Retention Actions (B2B)",
+"name": "RTD Retention Actions (B2B)"
+},
+{
+"rel": "child",
+"href": "http://ServerName:port/siebel-rest/v1.0/data/Account/Account/88-4XVPD/Pharma Account Call - CE",
+"name": "Pharma Account Call - CE"
+},
+{
+"rel": "child",
+"href": "http://ServerName:port/siebel-rest/v1.0/data/Account/Account/88-4XVPD/My Account Offer",
+"name": "My Account Offer"
+},
+{
+"rel": "child",
+"href": "http://ServerName:port/siebel-rest/v1.0/data/Account/Account/88-4XVPD/FINCORP Subsidiary",
+"name": "FINCORP Subsidiary"
+}
+
+],
+"SBA Review": "",
+"Friday End Time 2": "",
+"Saturday End Time 2": "",
+"Modified By Name": "SADMIN",
+"Friday End Time 1": "",
+"Saturday End Time 1": "",
+"Our Position": "",
+"Supply Characteristics": "",
+"DeDup Key Modification Date": "",
+"Prospect Flag": "N",
+"Market Share": "",
+"Statement Date": "",
+"Reference Stage": "",
+"Alt Email Address Type": "",
+"Business Description": "",
+"Fin Acct - Approx Annual Sales": "",
+"Start Date": "",
+"Contact Id": "",
+"Price List End Date": "",
+"Disable DataCleansing": "N",
+"Experian Id": "",
+"Preferred Shipping Method": "",
+"Project Fix Fee": ""
+}
