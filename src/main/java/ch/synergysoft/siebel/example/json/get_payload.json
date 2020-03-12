@@ -1,0 +1,146 @@
+{
+"Link": [
+{
+"rel": "self",
+"href": "http://ServerName:port/siebel-rest/v1.0/workspace/MyWorkspace/Applet/SIS Account List Applet",
+"name": "Applet"
+},
+{
+"rel": "canonical",
+"href": "http://ServerName:port/siebel-rest/v1.0/workspace/MyWorkspace/Applet/SIS Account List Applet",
+"name": "Applet"
+},
+{
+"rel": "child",
+"href": "http://ServerName:port/siebel-rest/v1.0/workspace/MyWorkspace/Applet/SIS Account List Applet/Applet Message",
+"name": "Applet Message"
+},
+{
+"rel": "child",
+"href": "http://ServerName:port/siebel-rest/v1.0/workspace/MyWorkspace/Applet/SIS Account List Applet/List",
+"name": "List"
+},
+{
+"rel": "child",
+"href": "http://ServerName:port/siebel-rest/v1.0/workspace/MyWorkspace/Applet/SIS Account List Applet/Chart",
+"name": "Chart"
+},
+{
+"rel": "child",
+"href": "http://ServerName:port/siebel-rest/v1.0/workspace/MyWorkspace/Applet/SIS Account List Applet/Tree",
+"name": "Tree"
+},
+{
+"rel": "child",
+"href": "http://ServerName:port/siebel-rest/v1.0/workspace/MyWorkspace/Applet/SIS Account List Applet/Applet Web Template",
+"name": "Applet Web Template"
+},
+{
+"rel": "child",
+"href": "http://ServerName:port/siebel-rest/v1.0/workspace/MyWorkspace/Applet/SIS Account List Applet/Applet Browser Script",
+"name": "Applet Browser Script"
+},
+{
+"rel": "child",
+"href": "http://slc05krw/siebel-rest/v1.0/workspace/MyWorkspace/Applet/SISAccount List Applet/Applet User Prop",
+"name": "Applet User Prop"
+},
+{
+"rel": "child",
+"href": "http://ServerName:port/siebel-rest/v1.0/workspace/MyWorkspace/Applet/SIS Account List Applet/Applet Locale",
+"name": "Applet Locale"
+},
+{
+"rel": "child",
+"href": "http://ServerName:port/siebel-rest/v1.0/workspace/MyWorkspace/Applet/SIS Account List Applet/Applet Toggle",
+"name": "Applet Toggle"
+},
+{
+"rel": "child",
+"href": "http://ServerName:port/siebel-rest/v1.0/workspace/MyWorkspace/Applet/SIS Account List Applet/Applet Server Script",
+"name": "Applet Server Script"
+},
+{
+"rel": "child",
+"href": "http://ServerName:port/siebel-rest/v1.0/workspace/MyWorkspace/Applet/SIS Account List Applet/Applet Script",
+"name": "Applet Script"
+},
+{
+"rel": "child",
+"href": "http://ServerName:port/siebel-rest/v1.0/workspace/MyWorkspace/Applet/SIS Account List Applet/Drilldown Object",
+"name": "Drilldown Object"
+},
+{
+"rel": "child",
+"href": "http://ServerName:port/siebel-rest/v1.0/workspace/MyWorkspace/Applet/SIS Account List Applet/Control",
+"name": "Control"
+},
+{
+"rel": "child",
+"href": "http://ServerName:port/siebel-rest/v1.0/workspace/MyWorkspace/Applet/SIS Account List Applet/Applet Method Menu Item",
+"name": "Applet Method Menu Item"
+}
+],
+"ObjectLockedById": "",
+"AutoQueryMode": "",
+"PopupDimension": "",
+"Class": "CSSFrameListBase",
+"NoInsert": "N",
+"HelpIdentifier": "ID_APPLET_ACCOUNT_LIST",
+"ProjectLocked": "Y",
+"MailAddressField": "",
+"Name": "SIS Account List Applet",
+"BrowserClass": "",
+"ICLUpgradePath": "",
+"ProjectUIFreezeById": "",
+"HTMLPopupDimension": "",
+"workspace/MyWorkspaceName": "Siebel workspace/MyWorkspace",
+"MailTemplate": "",
+"BusinessComponent": "Account",
+"HTMLNumberOfRows": "",
+"ProjectLockedLanguage": "ENU",
+"Title-StringReference": "SBL_ACCOUNTS-1009090115-23Y",
+"Title-BaseRow": "",
+"ApplicationCode": "",
+"SearchSpecification": "",
+"Scripted": "N",
+"ResponsiveFlag": "Y",
+"ServiceApplicationUse": "",
+"TextStyle": "",
+"BackgroundBitmap": "",
+"NoUpdate": "N",
+"workspace/MyWorkspaceId": "88-4NW-1",
+"ObjectLocked": "N",
+"Title-RefDefault": "Accounts",
+"DefaultAppletMethod": "",
+"ToolsApplicationUse": "",
+"DefaultDoubleClickMethod": "",
+"Height": "4",
+"NoDelete": "N",
+"Module": "",
+"ObjectLockedDate": "",
+"ObjectLanguageLocked": "ENU",
+"Comments": "7.5.2.200 UI ENHANCEMENT",
+"Task": "",
+"Title-RefExact": "Accounts",
+"UpgradeAncestor": "",
+"ProjectLockedById": "0-1",
+"ProjectId": "88-4NW-4Y3",
+"InsertApplet": "",
+"BackgroundBitmapStyle": "",
+"DisableDatalossWarning": "N",
+"ProjectUIFreeze": "N",
+"InsertPosition": "",
+"SalesApplicationUse": "",
+"Width": "2",
+"ObjectLockedByName": "",
+"Inactive": "N",
+"UpgradeBehavior": "Preserve",
+"Type": "Standard",
+"LanguageCode": "",
+"AssociateApplet": "Agg Account Assoc Applet",
+"Title-StringOverride": "",
+"ProjectName": "VERT CUT Common",
+"ListName": "List",
+"NoMerge": "N"
+}
