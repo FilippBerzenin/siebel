@@ -1,7 +1,10 @@
 package ch.synergysoft.siebel.model;
 
-import java.applet.Applet;
+import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
+import org.springframework.stereotype.Service;
 
+@Service
 public class Models {
 
     public static final String SISAccountListApplet = "{\n" +
@@ -398,7 +401,123 @@ public class Models {
             "}\n";
 
 
+    public static final String bodyWriteRecord = "{\n" +
+            "  \"Name\":\"WriteRecord\"\n" +
+            "}";
 
+    public static final String bodyPutSISAccountListApplet_1 = "{\n" +
+            "    \"Name\": \"SIS Account List Applet_1\",\n" +
+            "    \"UpgradeBehavior\": \"Preserve\",\n" +
+            "    \"Comments\": \"New Record_Applet\",\n" +
+            "    \"ProjectName\": \"VERT CUT Common\"\n" +
+            "}";
 
+    public static final String bodyPutAccount884XVPD = "{\n" +
+            "\"Name\": \"AccountExample\",\n" +
+            "\"Primary Organization Id\": \"1SIA-7SY3\",\n" +
+            "\"Primary Organization\": \"Medical Products MD ENU\", \"Location\": \"Albany\",\n" +
+            "\"Description\": \"AccountData\"\n" +
+            "}";
+
+    public static final String bodyAccount = "{\n" +
+            "\"Name\": \"AccountExample\",\n" +
+            "\"Primary Organization\": \"Medical Products MD ENU\",\n" +
+            "\"Location\": \"Albany\",\n" +
+            "\"Primary Organization Id\": \"1SIA-7SY3\"\n" +
+            "}";
+
+    public static final String bodyContact = "{\n" +
+            "\"Bill To First Name\":\"Siebel\",\n" +
+            "\"Bill To Last Name\": \"Customer\",\n" +
+            "\"Person UId\":\"0CR-1MF5Z6d11\",\n" +
+            "\"Primary Organization\":\"Default Organization\", \"Personal Contact\":\"N\"\n" +
+            "}";
+
+    public static final String bodyContact884W6YS = "{\n" +
+            "    \"Primary Account Name\": \"DemoAccount1303\",\n" +
+            "    \"Personal Contact\": \"N\",\n" +
+            "    \"Account Integration Id\": \"\",\n" +
+            "    \"Id\": \"88-4W6YS\",\n" +
+            "    \"Bill To Last Name\": \"Customer\",\n" +
+            "    \"Person UId\": \"0CR-1MF5Z6d11\",\n" +
+            "    \"Bill To First Name\": \"Siebel\",\n" +
+            "    \"Employee Number\": \"88-4W6YS\",\n" +
+            "    \"Primary Organization\": \"Default Organization\",\n " +
+            "   \"Bill To Job Title\": \"VP\"\n" +
+            "}";
+
+    public static final String bodyQueryByExample = "{ \"body\":{\n" +
+            "    \"StartRowNum\": \"0\",\n" +
+            "      \"SiebelMessage\":{\n" +
+            "        \"MessageId\":\"\",\n" +
+            "        \"MessageType\":\"Integration Object\",\n" +
+            "        \"IntObjectName\":\"Account Interface\",\n" +
+            "        \"IntObjectFormat\":\"Siebel Hierarchical\",\n" +
+            "        \"ListOfAccount Interface\":{\n" +
+            "        \"Account\":{\"Name\": \"3Com\" }\n" +
+            "} }\n" +
+            "} }";
+
+    public static final String bodyWriteRecordLonger = "{\n" +
+            "    \"Name\": \"WriteRecord\",\n" +
+            "    \"Comments\": \"New Record_Applet\",\n" +
+            "    \"ProjectName\": \"VERT CUT Common\"\n" +
+            "}";
+
+    public static final String bodySynchronizeUser = "{ \"body\":\n" +
+            "    {\n" +
+            "      \"Employee\":\n" +
+            "{\n" +
+            "\"Login Name\": \"Cathy.Rogers\", \"Field 1\": \"Value 1\",\n" +
+            "\"Field 2\": \"Value 2\"\n" +
+            "} }\n" +
+            "}";
+
+    public static final String bodyCreateUser = "{ \"body\":\n" +
+            "    {\n" +
+            "      \"Employee\":\n" +
+            "      {\n" +
+            "        \"First Name\": \"Cathy\",\n" +
+            "        \"Last Name\": \"Rogers\",\n" +
+            "        \"Login Name\":\"Cathy.Rogers\",\n" +
+            "        \"EMail Addr\":\"Cathy.Rogers@oracle.com\"\n" +
+            "      },\n" +
+            "      \"ListOfPosition\":\n" +
+            "      {\n" +
+            "            \"Position\":\n" +
+            "            {\n" +
+            "              \"Name\":\"Cathy.Rogers\",\n" +
+            "              \"Division\":\"Default Organization\"\n" +
+            "            }\n" +
+            "      },\n" +
+            "      \"ListOfEmployee_Responsibility\":\n" +
+            "      {\n" +
+            "        \"Employee_Responsibility\":\n" +
+            "        {\n" +
+            "          \"Responsibility\":\"Clinical Research Associate\"\n" +
+            "        }\n" +
+            "      }\n" +
+            "    }\n" +
+            "}";
+
+    public static final String bodyTerminateUser = "{ \"body\":\n" +
+            "{ \"Employee\":\n" +
+            "{\n" +
+            "\"Login Name\":\"Cathy.Rogers\"\n" +
+            "} }\n" +
+            "}";
+
+    public Boolean isEqualsJSON(String locJSONString, String inpJSONString){
+
+        JsonObject jsonLocObject = new JsonParser().parse(locJSONString).getAsJsonObject();
+        JsonObject jsonInpObject = new JsonParser().parse(inpJSONString).getAsJsonObject();
+
+        // for test/debag purposes
+        System.out.println(jsonLocObject.equals(jsonInpObject));
+        System.out.println(jsonInpObject);
+        System.out.println(jsonLocObject);
+
+        return jsonLocObject.equals(jsonInpObject);
+    }
 
 }
