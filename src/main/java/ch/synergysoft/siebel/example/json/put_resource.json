@@ -4,7 +4,6 @@
 "rel": "self",
 "href": "http://ServerName:port/siebel-rest/v1.0/workspace/MyWorkspace/Applet/SIS Account List Applet_1",
 "name": "Applet"
-},
-"Name": "SIS Account List Applet_1"
+}
 }
 }
