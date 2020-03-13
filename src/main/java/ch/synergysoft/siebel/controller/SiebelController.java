@@ -28,14 +28,14 @@ public class SiebelController {
             // no application/json
             return ResponseEntity.ok().header("Content-Type", "application/json").body(Models.WriteRecordLonger);
         else
-            return ResponseEntity.badRequest().header("Content-Type", "").body("Invalid or empty body");
+            return ResponseEntity.status(406).header("Content-Type", "").body("Invalid or empty body");
     }
 
     @PutMapping("siebel-rest/v1.0/workspace/MyWorkspace/Applet/SIS Account List Applet_1")
     public ResponseEntity<String> PutSISAccountListApplet_1(@RequestBody String jsonBody){
 
         if( jsonBody == null || jsonBody.isEmpty() || !(models.isEqualsJSON(Models.bodyPutSISAccountListApplet_1,jsonBody)) )
-            return ResponseEntity.badRequest().header("Content-Type", "").body("Invalid or empty body");
+            return ResponseEntity.status(406).header("Content-Type", "").body("Invalid or empty body");
         else
             // no application/json
             return ResponseEntity.ok().header("Content-Type", "application/json").body(Models.SISAccountListApplet_1);
@@ -57,7 +57,7 @@ public class SiebelController {
     public ResponseEntity<String> PutAccount884XVPD(@RequestBody String jsonBody){
 
         if( jsonBody == null || jsonBody.isEmpty() || !(models.isEqualsJSON(Models.bodyPutAccount884XVPD,jsonBody)) )
-            return ResponseEntity.badRequest().header("Content-Type", "").body("Invalid or empty body");
+            return ResponseEntity.status(406).header("Content-Type", "").body("Invalid or empty body");
         else
             return ResponseEntity.ok().header("Content-Type", "application/json").body(Models.PutAccount884XVPD);
     }
@@ -66,7 +66,7 @@ public class SiebelController {
     public ResponseEntity<String> Account(@RequestBody String jsonBody){
 
         if( jsonBody == null || jsonBody.isEmpty() || !(models.isEqualsJSON(Models.bodyAccount,jsonBody)) )
-            return ResponseEntity.badRequest().header("Content-Type", "").body("Invalid or empty body");
+            return ResponseEntity.status(406).header("Content-Type", "").body("Invalid or empty body");
         else
             return ResponseEntity.ok().header("Content-Type", "application/json").body(Models.Account);
     }
@@ -75,7 +75,7 @@ public class SiebelController {
     public ResponseEntity<String> Contact(@RequestBody String jsonBody){
 
         if( jsonBody == null || jsonBody.isEmpty() || !(models.isEqualsJSON(Models.bodyContact,jsonBody)) )
-            return ResponseEntity.badRequest().header("Content-Type", "").body("Invalid or empty body");
+            return ResponseEntity.status(406).header("Content-Type", "").body("Invalid or empty body");
         else
             // no application/json
             return ResponseEntity.ok().header("Content-Type", "application/json").body(Models.Contact);
@@ -85,7 +85,7 @@ public class SiebelController {
     public ResponseEntity<String> Contact884W6YS(@RequestBody String jsonBody){
 
         if( jsonBody == null || jsonBody.isEmpty() || !(models.isEqualsJSON(Models.bodyContact884W6YS,jsonBody)) )
-            return ResponseEntity.badRequest().header("Content-Type", "").body("Invalid or empty body");
+            return ResponseEntity.status(406).header("Content-Type", "").body("Invalid or empty body");
         else
             // no application/json
             return ResponseEntity.status(201).header("Content-Type", "application/json").body(Models.Contact884W6YS);
@@ -101,7 +101,7 @@ public class SiebelController {
     public ResponseEntity<String> QueryByExample(@RequestBody String jsonBody, @RequestParam String PageSize, @RequestParam String ViewMode){
 
         if( jsonBody == null || jsonBody.isEmpty() || !(models.isEqualsJSON(Models.bodyQueryByExample,jsonBody)) )
-            return ResponseEntity.badRequest().header("Content-Type", "").body("Invalid or empty body");
+            return ResponseEntity.status(406).header("Content-Type", "").body("Invalid or empty body");
         else
             return ResponseEntity.ok().header("Content-Type", "application/json").body(Models.QueryByExample);
     }
@@ -110,7 +110,7 @@ public class SiebelController {
     public ResponseEntity<String> CreateUser(@RequestBody String jsonBody){
 
         if( jsonBody == null || jsonBody.isEmpty() || !(models.isEqualsJSON(Models.bodyCreateUser,jsonBody)) )
-            return ResponseEntity.badRequest().header("Content-Type", "").body("Invalid or empty body");
+            return ResponseEntity.status(406).header("Content-Type", "").body("Invalid or empty body");
         else
             return ResponseEntity.ok().header("Content-Type", "application/json").body(null);
     }
@@ -119,7 +119,7 @@ public class SiebelController {
     public ResponseEntity<String> SynchronizeUser(@RequestBody String jsonBody){
 
         if( jsonBody == null || jsonBody.isEmpty() || !(models.isEqualsJSON(Models.bodySynchronizeUser,jsonBody)) )
-            return ResponseEntity.badRequest().header("Content-Type", "").body("Invalid or empty body");
+            return ResponseEntity.status(406).header("Content-Type", "").body("Invalid or empty body");
         else
             return ResponseEntity.ok().header("Content-Type", "application/json").body(null);
     }
@@ -128,7 +128,7 @@ public class SiebelController {
     public ResponseEntity<String> TerminateUser(@RequestBody String jsonBody){
 
         if( jsonBody == null || jsonBody.isEmpty() || !(models.isEqualsJSON(Models.bodyTerminateUser,jsonBody)) )
-            return ResponseEntity.badRequest().header("Content-Type", "").body("Invalid or empty body");
+            return ResponseEntity.status(406).header("Content-Type", "").body("Invalid or empty body");
         else
             return ResponseEntity.ok().header("Content-Type", "application/json").body(null);
     }

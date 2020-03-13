@@ -513,9 +513,9 @@ public class Models {
         JsonObject jsonInpObject = new JsonParser().parse(inpJSONString).getAsJsonObject();
 
         // for test/debag purposes
-        System.out.println(jsonLocObject.equals(jsonInpObject));
-        System.out.println(jsonInpObject);
-        System.out.println(jsonLocObject);
+//        System.out.println(jsonLocObject.equals(jsonInpObject));
+//        System.out.println(jsonInpObject);
+//        System.out.println(jsonLocObject);
 
         return jsonLocObject.equals(jsonInpObject);
     }
