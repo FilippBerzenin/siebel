@@ -125,12 +125,8 @@ public class SiebelController {
     }
 
     @DeleteMapping("siebel-rest/v1.0/service/LS Clinical User Provisioning Service/TerminateUser")
-    public ResponseEntity<String> TerminateUser(@RequestBody String jsonBody){
-
-        if( jsonBody == null || jsonBody.isEmpty() || !(models.isEqualsJSON(Models.bodyTerminateUser,jsonBody)) )
-            return ResponseEntity.status(406).header("Content-Type", "").body("Invalid or empty body");
-        else
-            return ResponseEntity.ok().header("Content-Type", "application/json").body(null);
+    public ResponseEntity<String> TerminateUser(){
+        return ResponseEntity.ok().header("Content-Type", "application/json").body(null);
     }
 
 }
