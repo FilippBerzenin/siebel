@@ -3,7 +3,6 @@ package ch.synergysoft.siebel.restcontroller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
-import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -56,22 +55,22 @@ public class ControllerObject {
 		return service.createOtputObject (newResources, name).toJSONString();
 	}
 	
-	//TODO	
-	public String putSiebelChildBusinessObject () {
-		return "ok";
-	}
-	
-	//	TODO
-	public String upsertingSiebelChildBusinessObject () {
-		return "ok";
-	}
-	
-	@DeleteMapping (
-			value  = "/siebel-rest/v1.0/data/Account/Account/88-4XVPD"
-			)
-	public String deletingSiebelBusinessObject () {
-		return "OK";
-		
-	}
+//	//TODO	
+//	public String putSiebelChildBusinessObject () {
+//		return "ok";
+//	}
+//	
+//	//	TODO
+//	public String upsertingSiebelChildBusinessObject () {
+//		return "ok";
+//	}
+//	
+//	@DeleteMapping (
+//			value  = "/siebel-rest/v1.0/data/Account/Account/88-4XVPD"
+//			)
+//	public String deletingSiebelBusinessObject () {
+//		return "OK";
+//		
+//	}
 
 }

@@ -3,7 +3,7 @@ package ch.synergysoft.siebel.restcontroller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
-import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.lang.NonNull;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PutMapping;
@@ -22,12 +22,14 @@ public class ControllerResources {
 	
 	private String path;
 
-	
+	@NonNull
 	@GetMapping(
-			value = "/siebel-rest/v1.0/workspace/MyWorkspace/SIS Account List Applet",
+			value = "/siebel-rest/v1.0/workspace/MyWorkspace/{nameResource}",
 			produces = MediaType.APPLICATION_JSON_VALUE)
 			@ResponseStatus(HttpStatus.OK)
-	public String getSiebelAllRepositoryResource() {
+	public String getSiebelAllRepositoryResource(
+			@PathVariable("nameResource") String nameResource
+			) {
 		path = "get_payload_resources.json";
 		return service.getJSONPayload(path).toString();
 	}
@@ -35,7 +37,7 @@ public class ControllerResources {
 	@PutMapping(
 			value = "/siebel-rest/v1.0/workspace/MyWorkspace/Applet/{name}/Control/{type}",
 			produces = MediaType.APPLICATION_JSON_VALUE)
-	@ResponseStatus(HttpStatus.OK)
+			@ResponseStatus(HttpStatus.OK)
 	public String putSiebelChildRepositoryResource(
 			@PathVariable("name") String name,
 			@PathVariable("type") String type,
@@ -58,14 +60,14 @@ public class ControllerResources {
 //				return newResources;
 //		
 //	}
-	
-	@DeleteMapping(
-			value = " /siebel-rest/v1.0/data/Account/Account/{id}",
-			produces = MediaType.APPLICATION_JSON_VALUE)
-	@ResponseStatus(HttpStatus.OK)
-	private String deleteSiebelRepositoryResource (
-			@PathVariable("id") String id) {
-				return "OK";
-		
-	}
+//	
+//	@DeleteMapping(
+//			value = " /siebel-rest/v1.0/data/Account/Account/{id}",
+//			produces = MediaType.APPLICATION_JSON_VALUE)
+//	@ResponseStatus(HttpStatus.OK)
+//	private String deleteSiebelRepositoryResource (
+//			@PathVariable("id") String id) {
+//				return "OK";
+//		
+//	}
 }
