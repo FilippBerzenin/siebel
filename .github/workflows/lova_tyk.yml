@@ -28,5 +28,5 @@ jobs:
       with:
         app-name: 'tyk'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_15a41fcb83734c4a9cd727b2ad19d0ad }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_5b2999ce3f3d4d7094d78e4468ec5e56 }}
         package: '${{ github.workspace }}/target/*.jar'
